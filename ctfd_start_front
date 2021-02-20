@@ -1,0 +1,14 @@
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "Not running as root"
+    exit
+fi
+
+apt update
+apt upgrade -y
+apt install docker.io -y
+apt install docker-compose -y
+
+cd /
+git clone https://github.com/CTFd/CTFd.git
+cd /CTFd
+docker-compose up -d

@@ -1,0 +1,62 @@
+Not so secret flag:
+  name: Not so secret flag
+  desc: There's a flag in printf that allows you to LEAK the data at an address?
+  flag: flag{printf_is_vaulnerable}
+  compose: Pwn/Not_so_secret_flag/deploy/docker-compose.yml
+  solve: Pwn/Not_so_secret_flag/solve.py
+
+overflow-0:
+  name: overflow-0
+  desc: You shouldn't need hehlp with this one
+  flag: flag{b0ffer_0verf10w_3asy_as_123}
+  compose: Pwn/overflow-0/deploy/docker-compose.yml
+  solve: Pwn/overflow-0/solve.py
+
+overflow-1:
+  name: overflow-1
+  desc: You're gonna need the source code 
+  flag: flag{th1s_0ne_wasnt_pure_gu3ssing_1_h0pe}
+  compose: Pwn/overflow-1/deploy/docker-compose.yml
+  solve: Pwn/overflow-1/solve.py
+
+Shy_boy:
+  name: Shy boy
+  desc: I don't talk much but you might need some shellcode
+  flag: flag{n0t_50_5hy_af73r_ALl}
+  compose: Pwn/Shy_boy/deploy/docker-compose.yml
+  solve: Pwn/Shy_boy/solve.py
+
+Caas:
+  name: caas
+  desc: Too lazy to install gcc? Hey, we can compile your code to you!
+  flag: flag{D1d_y0u_1nclude_th3_fl4g?}
+  compose: Web/caas/deploy/docker-compose.yml
+  solve: n/a
+
+login:
+  name: login
+  desc: I made a cool login page. I bet you can't get in!
+  flag: flag{0bl1g4t0ry_5ql1}
+  compose: Web/login/deploy/docker-compose.yml
+  solve: n/a
+
+push:
+  name: push
+  desc: what is this push you speak of?
+  flag: flag{http2_push_dashdash_f0rce}
+  compose: Web/push/deploy/docker-compose.yml
+  solve: n/a
+
+sauce:
+  name: sauce?
+  desc: I love sauce! I won't tell you what my special secret sauce is though!
+  flag: flag{n0_k37chup_ju57_54uc3_r4w_54uc3_9873984579857} 
+  compose: Web/sauce/deploy/docker-compose.yml
+  solve: n/a
+
+url2pdf:
+  name: Url2pdf
+  desc: Please test our brand new service.
+  flag: flag{w0w_pdf5_4r3_K3WL}
+  compose: Web/url2pdf/deploy/docker-compose.yml
+  solve: n/a

@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+    url_to_pdf:
+        build: .
+        ports:
+            - '10004:5000'

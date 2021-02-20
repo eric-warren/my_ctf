@@ -1,0 +1,31 @@
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "Not running as root"
+    exit
+fi
+
+apt update
+apt upgrade -y
+apt install docker.io -y
+apt install docker-compose -y
+
+docker volume create portainer_data
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+cd Pwn/overflow-0/deploy
+docker-compose up -d
+cd Pwn/overflow-1/deploy
+docker-compose up -d
+cd Pwn/shy_boi/deploy
+docker-compose up -d
+cd Pwn/NSS-flag/deploy
+docker-compose up -d
+cd Web/caas/deploy
+docker-compose up -d
+cd Web/sauce/deploy
+docker-compose up -d
+cd Web/login/deploy
+docker-compose up -d
+cd Web/push/deploy
+docker-compose up -d
+cd Web/url2pdf/deploy
+docker-compose up -d
+

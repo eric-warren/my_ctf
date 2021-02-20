@@ -1,0 +1,5 @@
+Congratulations!
+
+I hope you liked this small challenge.
+
+The flag you are looking for is flag{S1mpl3_3ncr1pt10n_f0und_0n_g1thub!}
